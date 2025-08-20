@@ -3,21 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I'M SINTA</title>
+    <title>I'M ZI</title>
     <link href='https://unpkg.com/boxicons/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
-</head>
+  </head>
 <body>
+
+
+</script>
+
+<script>
+  function createBulb() {
+    const bulb = document.createElement('div');
+    bulb.classList.add('falling-bulb');
+    bulb.style.left = Math.random() * window.innerWidth + 'px';
+    bulb.style.animationDuration = (Math.random() * 5 + 5) + 's'; // 5s - 10s
+
+    // Variasi warna lampu
+    const colors = ['#FFD700', '#FF6347', '#00FFFF', '#ADFF2F', '#FF69B4'];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    bulb.style.background = randomColor;
+    bulb.style.boxShadow = `0 0 10px 4px ${randomColor}`;
+
+    document.body.appendChild(bulb);
+
+    setTimeout(() => {
+      bulb.remove();
+    }, 10000); // sama dengan animasi
+  }
+
+  setInterval(createBulb, 400); // lebih cepat untuk efek lampu ramai
+</script>
+
    <!-- HERO -->
     <div class="hero">
         <div class="container hero-container">
             <div class="hero-picture">
-                <img src="assets/images/sinta.jpeg" alt="">
+                <img src="assets/image/sinta.jpeg" alt="">
             </div>
               <div class="hero-desc">
                 <h1>Hello</h1>
-                <h2> I'm shuntaa</h2>
+                <h2> I'm shuntaaa</h2>
                 <p>Web Developer</p>
                 <a href="#about">Know More</a>
              </div>
@@ -25,49 +52,52 @@
     </div>
 <br>
     <!-- SECTION -->
-    <section class="data-sinta-section" id="about">
+    <section class="data-sin-section" id="about">
     <h2 class="heading"><span>About</span> <span>Me</span></h2>
 
-    <div class="data-sinta-container">
+    <div class="data-sin-container">
 
-      <div class="data-sinta">
+      <div class="data-sin">
         <i class="bx bx-user"></i>
         <h3>Data Diri</h3>
         <ul>
-          <li><span class="label">Nama:</span> Sintaa</li>
-          <li><span class="label">Kelas :</span> XI RPL B</li>
-          <li><span class="label">No absen :</span> 33</li>
+          <li><span class="label">Nama:</span> sinta ramadhani</li>
+          <li><span class="label">Kelas:</span> XI RPL B</li>
           <li><span class="label">Sekolah:</span> SMK Negeri 3 Metro</li>
           <li><span class="label">Agama:</span> Islam</li>
         </ul>
       </div>
 
-      <div class="data-sinta">
+      <div class="data-sin">
         <i class="bx bx-id-card"></i>
         <h3>Pendidikan</h3>
         <ul>
-          <li><span class="label">SD:</span> SD N Gunung sugih kecil</li>
-          <li><span class="label">SMP:</span> SMP N 7 Metro</li>
+          <li><span class="label">SD:</span> SD gunung sugih kecil</li>
+          <li><span class="label">SMP:</span> SMP Negeri 7 Metro</li>
           <li><span class="label">SMK:</span> SMK Negeri 3 Metro</li>
         </ul>
       </div>
 
-      <div class="data-sinta">
+      <div class="data-sin">
         <i class="bx bx-code-alt"></i>
         <h3>Skill</h3>
         <ul>
           <li><span class="label">HTML</span></li>
+          <li><span class="label">CSS</span></li>
           <li><span class="label">Python</span></li>
         </ul>
       </div>
 
-     <div class="data-sinta">
+     <div class="data-sin">
        <i class="bx bx-briefcase-alt"></i>
        <h3>Pengalaman</h3>
        <ul>
-        <li><span class="label">lomba pencak silat</span></li>
-          <li><span class="label">mempelajari cara menghitung matematika menggunakan Python</span></li>
-          <li><span class="label">Membuat kalkulator dari HTML dan CSS</span></li>
+        <li><span class="label">pernah ikut lomba pencak silat</span></li>
+          <li><span class="label">Membuat web portofolio menggunakan HTML </span></li>
+          <li><span class="label">Membuat game sederhana dari HTML dan CSS</span></li>
+          <li><span class="label">Mempelajari cara menghitung matematika menggunakan Python</span></li>
+          <li><span class="label">Membuat game pemesanan cafee di Python</span></li>
+          <li><span class="label">Membuat aljabar di Python</span></li>
         </ul>
      </div>
 
@@ -80,17 +110,34 @@
   <div class="footerContainer">
     <div class="socialIcons">
       <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.instagram.com/zinytaa_09"><i class="fa-brands fa-instagram"></i></a>
       <a href="#"><i class="fa-brands fa-youtube"></i></a>
       <a href="#"><i class="fa-brands fa-twitter"></i></a>
       <a href="#"><i class="fa-brands fa-google-plus"></i></a>
     </div>
+  
 
     <div class="footerBottom">
-      <p>Copyright &copy; 2025; Designed By <span class="designer">naysproject</span></p>
+      <p>Copyright &copy; 2025; Designed By <span class="designer">sinproject</span></p>
     </div>
   </div>
 </footer>
+<script>
+  // Confetti 3D style
+  function launchConfetti() {
+    confetti({
+      particleCount: 100,
+      spread: 160,
+      origin: { y: 0.6 },
+      zIndex: 9999,
+    });
+  }
+
+  // Trigger confetti saat halaman dibuka
+  window.addEventListener('load', () => {
+    setTimeout(launchConfetti, 1000); // 1 detik delay
+  });
+</script>
 
 </body>
 </html>
